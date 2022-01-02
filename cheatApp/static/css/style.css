@@ -1,0 +1,280 @@
+:root {
+  --blue: rgb(82, 110, 189);
+  --white: white;
+  --blueBg: rgb(178, 216, 230);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+body {
+  background: var(--blueBg);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 12vh;
+  background-color: var(--blue);
+}
+
+.logo {
+  color: var(--white);
+  font-size: 30px;
+}
+
+.SignIn {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* li {
+  list-style: none;
+} */
+
+.SignIn a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.mainContent {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcomeApp {
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcomeApp h1 {
+  font-family: "Permanent Marker", cursive;
+  color: rgb(86, 115, 196, 0.5);
+  font-size: 100px;
+}
+
+.welcomeApp p {
+  color: rgb(86, 115, 196, 0.8);
+  font-size: 30px;
+}
+
+.btnSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  width: 50%;
+}
+
+.btnSection a {
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btnSection a button {
+  padding: 3%;
+  border: none;
+  border-color: var(--blue);
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 20rem;
+  font-size: 20px;
+}
+
+.btnSection button:hover {
+  color: white;
+  background-color: rgb(86, 115, 196, 0.8);
+}
+
+/* .burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+} */
+
+/* @media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 45%;
+  }
+} */
+
+/* @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+} */
+
+.main {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySheets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 40%;
+}
+
+.myCheatSheets h1 {
+  font-family: "Permanent Marker", cursive;
+  color: rgb(86, 115, 196, 0.8);
+  font-size: 75px;
+  margin-bottom: 5%;
+}
+
+.btnCheat {
+  position: relative;
+  padding: 30px 100px;
+  margin: 2px 25px;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+  color: rgb(86, 115, 196, 0.8);
+  border-radius: 30px;
+  cursor: pointer;
+
+  text-align: center;
+
+  z-index: 2;
+}
+
+.btnCheat:hover {
+  color: white;
+  background-color: rgb(86, 115, 196, 0.8);
+}
+
+.btnAdd {
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(86, 115, 196, 0.7);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-self: flex-start;
+  margin-left: 15px;
+  font-size: 25px;
+}
+
+.btnAdd:hover {
+  background-color: var(--blue);
+}
+
+.cheat {
+  display: flex;
+  justify-content: center;
+}
+
+.classCheat {
+  display: flex;
+  align-content: space-between;
+}
+
+.addCheat {
+  display: flex;
+}
+
+.accordion {
+  width: 350px;
+}
+
+.accordion h1 {
+  font-size: 25px;
+  color: white;
+}
+
+.consultCheat {
+  padding: 1rem;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.consultCheat ul ul {
+  padding-left: 0.8rem;
+}
+
+.title {
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: var(--blue);
+  border-radius: 25px;
+  margin-bottom: 5px;
+}
+
+.titleConsult {
+  border-radius: 25px;
+}
+
+.ulConsult {
+  color: var(--blue);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
